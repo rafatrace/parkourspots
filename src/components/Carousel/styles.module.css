@@ -1,0 +1,37 @@
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.back,
+.next {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back:disabled,
+.next:disabled {
+  opacity: 0.5;
+}
+
+.back {
+  right: 34px;
+}
+
+.next {
+  right: 10px;
+}
