@@ -19,17 +19,6 @@ const spots: Array<TSpot> = [
     ]
   },
   {
-    name: 'Damsgårdsveien 33',
-    description: 'Stairway by the marina. Many possibilities.',
-    coordinates: [60.37815400392495, 5.330385485776917],
-    images: [
-      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/JrJ4lJ7_wkVLq7lBSf.jpg',
-      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/GnSWnjcD6viLGdkiP7.jpg',
-      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/Oybkg1Brn9KArubPNk.jpg',
-      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/kH1R8NY4dPXo6H_V_B.jpg'
-    ]
-  },
-  {
     name: 'Bergen busstasjon',
     description:
       "Small spot with different level possibilities. It's a good spot when it's raining because has some sort of cover.",
@@ -116,6 +105,19 @@ const spots: Array<TSpot> = [
       'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/v5maOB4GkZx_-vz80G.png',
       'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/GamOMpByRMuqqWN4Om.png',
       'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/vip_nJfXo4wLYkijWb.png'
+    ]
+  },
+  {
+    name: 'Damsgardsveien 35',
+    description:
+      'Staircase with white walls around. Multiple challenges in this spot.',
+    coordinates: [60.3785111647937, 5.32914823918861],
+    images: [
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/E-xBmwQ6U-9P0RykZk.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/GWACiaEl8Uz6fZLLxF.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/BA_huC7XT14TOWHWMK.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/asqUZMVUo1uZjSX0iH.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/7K7HxPMD0KdrhsSsFK.png'
     ]
   }
 ]
