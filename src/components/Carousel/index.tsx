@@ -1,4 +1,4 @@
-import { ButtonBack, ButtonNext, CarouselProvider, Image, ImageWithZoom, Slide, Slider } from 'pure-react-carousel'
+import { ButtonBack, ButtonNext, CarouselProvider, Image, Slide, Slider } from 'pure-react-carousel'
 import styles from './styles.module.css'
 import 'pure-react-carousel/dist/react-carousel.es.css'
 
@@ -20,7 +20,7 @@ export default function Carousel({ images }: CarouselProps) {
       <Slider>
         {images.map((source, index) => (
           <Slide key={index} index={0} className={styles.slide}>
-            <ImageWithZoom src={source} className={styles.image} />
+            <Image hasMasterSpinner={false} src={source} className={styles.image} />
           </Slide>
         ))}
       </Slider>

@@ -1,9 +1,10 @@
-import spots, { TSpot } from '@/content/spots'
+import { TSpot } from '@/content/spots'
 import { MapContainer, TileLayer } from 'react-leaflet'
 import styles from './styles.module.css'
-import { Dispatch, SetStateAction } from 'react'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import cn from 'classnames'
 import Pin from '../Pin'
+import * as contentful from 'contentful'
 
 type MapProps = {
   spot: TSpot
@@ -11,6 +12,45 @@ type MapProps = {
 }
 
 export default function Map({ spot, setSelectedSpot }: MapProps) {
+  // Local state
+  const [spots, setSpots] = useState<TSpot[]>([])
+
+  useEffect(() => {
+    const loadSpots = async () => {
+      const client = contentful.createClient({
+        space: 'wecn5invhqct',
+        accessToken: 'KkZriah8IIA0luy7QY4nTBh3n44WNkl3drvTuUeXTFA'
+      })
+
+      const { items } = await client.getEntries({
+        content_type: 'spot'
+      })
+
+      if (items != null) {
+        const s = []
+        items.map((item) => {
+          const images = []
+          if (Array.isArray(item.fields.images)) {
+            item.fields.images.map((img) => {
+              images.push(`https:${img.fields.file.url}`)
+            })
+          }
+
+          s.push({
+            name: item.fields.name,
+            description: item.fields.description,
+            coordinates: JSON.parse(`[${item.fields.coordinates}]`),
+            images
+          })
+        })
+
+        setSpots(s)
+      }
+    }
+
+    loadSpots()
+  }, [])
+
   return (
     <div
       className={cn(styles.map, {
