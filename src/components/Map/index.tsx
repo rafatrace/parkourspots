@@ -19,7 +19,7 @@ export default function Map({ spot, setSelectedSpot }: MapProps) {
     const loadSpots = async () => {
       const client = contentful.createClient({
         space: 'wecn5invhqct',
-        accessToken: 'KkZriah8IIA0luy7QY4nTBh3n44WNkl3drvTuUeXTFA'
+        accessToken: import.meta.env.VITE_TOKEN
       })
 
       const { items } = await client.getEntries({
