@@ -2,8 +2,8 @@ import { TSpot } from '@/content/spots'
 import { Marker, useMap } from 'react-leaflet'
 import { Dispatch, SetStateAction } from 'react'
 import L from 'leaflet'
-import pinVector from '../../public/pin.svg'
-import mutedVector from '../../public/mutedpin.svg'
+import pinVector from '../assets/pin.svg'
+import mutedVector from '../assets/mutedpin.svg'
 
 type PinProps = {
   selectedSpot: TSpot
