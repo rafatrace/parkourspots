@@ -119,6 +119,18 @@ const spots: Array<TSpot> = [
       'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/asqUZMVUo1uZjSX0iH.png',
       'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/7K7HxPMD0KdrhsSsFK.png'
     ]
+  },
+  {
+    name: 'Haukeland Sjukehus Staircase',
+    description:
+      'Public passageway with some walls around the staircase. Here you can also find a big wall run challenge.',
+    coordinates: [60.374793405802656, 5.362726991880332],
+    images: [
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/i489oPEbgRjkKxoJF5.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/3RPvJR9Vt3QD0SWdVZ.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/n2nAz0akVFL94qgUkQ.png',
+      'http://db.rafa.a2hosted.com/download/noco/Leap/Spots/Images/cjnUMQZmx9ahDQgrMs.png'
+    ]
   }
 ]
 
